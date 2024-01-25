@@ -1,6 +1,4 @@
-# webpack-template
-
-Template for webpack
+# Drop-down menus
 
 -Setup github pages:
 git add dist && git commit -m "Initial dist subtree commit"
