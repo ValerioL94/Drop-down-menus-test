@@ -6,4 +6,4 @@ function importAll(r) {
 }
 importAll(require.context('/src/images', false, /\.(png|svg|jpg|jpeg|gif)$/));
 
-menu();
+menu.addListeners();

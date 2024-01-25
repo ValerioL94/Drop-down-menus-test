@@ -19,9 +19,11 @@ header {
   background-color: lightsalmon;
   border-bottom-width: 1px;
   border-bottom-style: solid;
+  position: relative;
 }
 
 header > .wrapper {
+  position: absolute;
   display: flex;
   gap: 20px;
 }
