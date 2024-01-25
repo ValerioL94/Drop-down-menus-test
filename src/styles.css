@@ -3,4 +3,127 @@ body {
   border: 0;
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+#content {
+  display: grid;
+  grid-template-rows: 80px 1fr 50px;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background-color: lightsalmon;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+header > .wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+header > h1 {
+  margin: auto;
+}
+
+button {
+  cursor: pointer;
+  border: 2px solid;
+  border-radius: 25%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bars {
+  height: 30px;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+#leftBtn {
+  transition: transform 1s;
+}
+
+#rightBtn {
+  transition: transform 1s;
+}
+
+.clicked {
+  transform: rotate(180deg);
+}
+#slideBar {
+  position: absolute;
+  height: 100%;
+  width: 0;
+  background-color: red;
+  transition: 1s;
+  overflow: hidden;
+}
+#slideBar.slide {
+  width: 300px;
+  border-right: 1px solid;
+}
+#dropBar {
+  position: absolute;
+  height: 0;
+  width: 300px;
+  background-color: blue;
+  transition: 1s;
+  overflow: hidden;
+}
+#dropBar.drop {
+  height: 100%;
+  border-right: 1px solid;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 20px 50px;
+}
+
+li {
+  list-style: none;
+  border-bottom: 1px solid;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+  height: 25px;
+  padding: 5px;
+}
+
+li:hover {
+  color: white;
+  font-size: 25px;
+}
+
+.test {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: lightsalmon;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+.github {
+  height: 20px;
 }
