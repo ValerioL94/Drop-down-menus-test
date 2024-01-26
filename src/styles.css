@@ -68,7 +68,7 @@ main {
   position: absolute;
   height: 100%;
   width: 0;
-  background-color: red;
+  background-color: green;
   transition: 1s;
   overflow: hidden;
 }
@@ -78,9 +78,10 @@ main {
 }
 #dropBar {
   position: absolute;
+  right: 0;
   height: 0;
   width: 300px;
-  background-color: blue;
+  background-color: red;
   transition: 1s;
   overflow: hidden;
 }
